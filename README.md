@@ -1,3 +1,3 @@
-# libpacsorter
+# LibPacSorter
 
-Libpacsorter is a library that contains tools for sorting ROM files in the Pac-Man and Ms. Pac-Man ROM set directories.
+LibPacSorter is a library used for sorting strings to properly manage filenames.

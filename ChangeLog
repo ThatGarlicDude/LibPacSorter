@@ -1,4 +1,14 @@
+2025-04-18 GarlicDude <https://github.com/ThatGarlicDude>
+
+	LibPacSorter Version 0.0.2-alpha
+	* Libpacsorter is now called LibPacSorter.
+	* Added stringSwapper.c and .h.
+	* Updated .gitignore so it can ignore files inside the build directory.
+	* Updated README.md.
+	* The project is now called pacsorter instead of libpacsorter.
+	* Removed the NEWS file, as it is not needed.
+
 2025-03-18 GarlicDude <https://github.com/ThatGarlicDude>
 
-	Libpacsorter Version 0.0.1-alpha
+	LibPacSorter Version 0.0.1-alpha
 	* Added the base files and directories, such as AUTHORS, CMakeLists.txt, src, and headers.
