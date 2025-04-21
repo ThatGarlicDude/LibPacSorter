@@ -1,5 +1,13 @@
 2025-04-21 GarlicDude <https://github.com/ThatGarlicDude>
 
+	LibPacSorter Version 0.0.4-alpha
+	* File extensions can now be compared.
+	* Added the ability to get a file with a lower extension.
+	* Added the ability to get a file with a higher extension.
+	* Did more debugging.
+
+2025-04-21 GarlicDude <https://github.com/ThatGarlicDude>
+
 	LibPacSorter Version 0.0.3-alpha
 	* Added extensionGetter.c and .h.
 	* Added fileNameComparator.c and .h (not used yet).
