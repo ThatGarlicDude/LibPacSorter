@@ -1,3 +1,10 @@
+2025-04-21 GarlicDude <https://github.com/ThatGarlicDude>
+
+	LibPacSorter Version 0.0.3-alpha
+	* Added extensionGetter.c and .h.
+	* Added fileNameComparator.c and .h (not used yet).
+	* Did some debugging as usual.
+
 2025-04-18 GarlicDude <https://github.com/ThatGarlicDude>
 
 	LibPacSorter Version 0.0.2-alpha
