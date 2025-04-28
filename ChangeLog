@@ -1,3 +1,12 @@
+2025-04-28 GarlicDude <https://github.com/ThatGarlicDude>
+
+	LibPacSorter Version 1.0.0
+	* Removed debug.c, as it is no longer needed.
+	* getLowerExtension is now findLowestFileExtension, and returns an index instead of a string pointer.
+	* Same for getHigherExtension, now being called findHighestFileExtension.
+	* Added fileNamePrinter.c and .h. Used for debugging purposes.
+	* ROMs can finally be sorted by their file extension. ;)
+
 2025-04-21 GarlicDude <https://github.com/ThatGarlicDude>
 
 	LibPacSorter Version 0.0.4-alpha

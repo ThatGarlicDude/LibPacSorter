@@ -10,27 +10,28 @@ int compareFileExtensions(const char* fileNameA, const char* fileNameB) {
 	return strcmp(extensionA, extensionB);
 }
 
-// Finds which file has the lowest extension.
-const char* getLowerExtension(const char* fileNameA, const char* fileNameB) {
-	int result = compareFileExtensions(fileNameA, fileNameB);
-	if (result < 0) {
-		return fileNameA; // If that's lower, return that.
-	} else if (result > 0) {
-		return fileNameB; // Otherwise, return the other filename.
-	} else {
-		return NULL; // Return null if they match.
+// Returns the index in which where the lowest ROM extension is at.
+int findLowestFileExtension(const char** romFiles, size_t size, int offset) {
+	int lowestFileExtension = offset;
+	int result;
+	for (size_t index = offset; index < size; index++) {
+		result = compareFileExtensions(romFiles[lowestFileExtension], romFiles[index]);
+		if (result > 0) {
+			lowestFileExtension = index;
+		}
 	}
+	return lowestFileExtension;
 }
 
-// Ditto, but for the highest extension.
-const char* getHigherExtension(const char* fileNameA, const char* fileNameB) {
-	// Not sure if this function should really exist long-term.
-	int result = compareFileExtensions(fileNameA, fileNameB);
-	if (result > 0) {
-		return fileNameA;
-	} else if (result < 0) {
-		return fileNameB;
-	} else {
-		return NULL;
+// Ditto, but for the highest ROM extension.
+int findHighestFileExtension(const char** romFiles, size_t size, int offset) {
+	int highestFileExtension = offset;
+	int result;
+	for (size_t index = offset; index < size; index++) {
+		result = compareFileExtensions(romFiles[highestFileExtension], romFiles[index]);
+		if (result < 0 ) {
+			highestFileExtension = index;
+		}
 	}
+	return highestFileExtension;
 }
