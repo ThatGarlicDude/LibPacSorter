@@ -4,11 +4,13 @@
 #include "fileNameComparator.h"
 #include "fileNamePrinter.h"
 #include "stringSwapper.h"
+#include "romSorter.h"
 
 // Sorts the ROMs in an array.
-void sortRoms(const char** romFiles, size_t size) {
+void sortRoms(RomSet* romSet) {
+	size_t size = romSet->size;
 	for (size_t index = 0; index < size; index++) {
-		int lowestFileExtension = findLowestFileExtension(romFiles, size, index);
-		swapConstStrings(&romFiles[index], &romFiles[lowestFileExtension]);
+		int lowestFileExtension = findLowestFileExtension(romSet, index);
+		swapConstStrings(&(romSet->filePaths[index]), &(romSet->filePaths[lowestFileExtension]));
 	}
 }

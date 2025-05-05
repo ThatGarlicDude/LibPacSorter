@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "extensionGetter.h"
+#include "romSet.h"
 
 // Compares two files' extensions. Used for telling which ROM should be placed first.
 int compareFileExtensions(const char* fileNameA, const char* fileNameB) {
@@ -11,11 +12,11 @@ int compareFileExtensions(const char* fileNameA, const char* fileNameB) {
 }
 
 // Returns the index in which where the lowest ROM extension is at.
-int findLowestFileExtension(const char** romFiles, size_t size, int offset) {
-	int lowestFileExtension = offset;
+int findLowestFileExtension(RomSet* romSet, int currentIndex) {
+	int lowestFileExtension = currentIndex;
 	int result;
-	for (size_t index = offset; index < size; index++) {
-		result = compareFileExtensions(romFiles[lowestFileExtension], romFiles[index]);
+	for (size_t index = currentIndex; index < romSet->size; index++) {
+		result = compareFileExtensions(romSet->filePaths[lowestFileExtension], romSet->filePaths[index]);
 		if (result > 0) {
 			lowestFileExtension = index;
 		}
@@ -24,11 +25,11 @@ int findLowestFileExtension(const char** romFiles, size_t size, int offset) {
 }
 
 // Ditto, but for the highest ROM extension.
-int findHighestFileExtension(const char** romFiles, size_t size, int offset) {
-	int highestFileExtension = offset;
+int findHighestFileExtension(RomSet* romSet, int currentIndex) {
+	int highestFileExtension = currentIndex;
 	int result;
-	for (size_t index = offset; index < size; index++) {
-		result = compareFileExtensions(romFiles[highestFileExtension], romFiles[index]);
+	for (size_t index = currentIndex; index < romSet->size; index++) {
+		result = compareFileExtensions(romSet->filePaths[highestFileExtension], romSet->filePaths[index]);
 		if (result < 0 ) {
 			highestFileExtension = index;
 		}

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "romSet.h"
 
 #ifndef FILENAME_COMPARATOR_H
 #define FILENAME_COMPARATOR_H
@@ -7,9 +8,9 @@
 	int compareFileExtensions(const char* fileNameA, const char* fileNameB);
 
 	// Returns the index in which where the lowest ROM extension is at.
-	int findLowestFileExtension(const char** romFiles, size_t size, int offset);
+	int findLowestFileExtension(RomSet* romSet, int currentIndex);
 
 	// Ditto, but for the highest ROM extension.
-	int findHighestFileExtension(const char** romFiles, size_t size, int offset);
+	int findHighestFileExtension(RomSet* romSet, int currentIndex);
 
 #endif

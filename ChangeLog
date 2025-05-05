@@ -1,3 +1,9 @@
+2025-05-05 GarlicDude <https://github.com/ThatGarlicDude>
+
+	LibPacSorter Version 1.1.0
+	* LibPacSorter now uses LibPacSet as its submodule.
+	* Rewritten the code to now use RomSet structs.
+
 2025-04-28 GarlicDude <https://github.com/ThatGarlicDude>
 
 	LibPacSorter Version 1.0.0
