@@ -1,3 +1,16 @@
+2025-05-22 GarlicDude <https://github.com/ThatGarlicDude>
+
+	LibPacSorter Version 1.2.0
+	* Submodule LibPacSet is now up to date, being on version 1.3.0.
+	* Removed filePathPrinter.c and .h, as LibPacSet already has a file similar to this, being romSetPrinter.c and .h.
+	* Function names now capitalize Rom to ROM.
+	* Functions now use the RomFile structs from LibPacSet.
+	* compareFileExtension is now renamed to compareROMs.
+	* Same for findLowestFileExtension and findHighestFileExtension, being findLowstROM and findHighestROM.
+	* stringSwapper.c and .h are renamed to romSwapper.c and .h.
+	* Added a TODO, which honestly doesn't matter that much.
+	* Happy 45th anniversary, Pac-Man! ;)
+
 2025-05-05 GarlicDude <https://github.com/ThatGarlicDude>
 
 	LibPacSorter Version 1.1.0
