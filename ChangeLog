@@ -1,3 +1,12 @@
+2025-05-25 GarlicDude <https://github.com/ThatGarlicDude>
+
+	LibPacSorter Version 1.3.0
+	* Added INSTALL.md!
+	* CMakeLists.txt is much cleaner than it was before.
+	* LibPacSorter now requires CMake version 3.18 or higher to make.
+	* LibPacSorter now simply requires the C language to run.
+	* Made it so LibPacSorter does not require C extensions when building.
+
 2025-05-22 GarlicDude <https://github.com/ThatGarlicDude>
 
 	LibPacSorter Version 1.2.0
