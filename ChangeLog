@@ -1,5 +1,10 @@
 2025-05-25 GarlicDude <https://github.com/ThatGarlicDude>
 
+	LibPacSorter Version 1.3.1
+	* Removed the unnecessary printf function, as it's in the way and stuff.
+
+2025-05-25 GarlicDude <https://github.com/ThatGarlicDude>
+
 	LibPacSorter Version 1.3.0
 	* Added INSTALL.md!
 	* CMakeLists.txt is much cleaner than it was before.
