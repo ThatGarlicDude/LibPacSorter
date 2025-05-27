@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.18)
-project(pacsorter VERSION 1.3.1 LANGUAGES C)
+project(pacsorter VERSION 1.4.0 LANGUAGES C)
 
 # Set up specifications for the C compiler.
 set(CMAKE_C_STANDARD 99)
