@@ -1,3 +1,9 @@
+2025-05-28 GarlicDude <https://github.com/ThatGarlicDude>
+
+	LibPacSorter Version 1.5.0
+	* Submodule LibPacSet is now up to date.
+	* CMake now turns on C extensions by default.
+
 2025-05-26 GarlicDude <https://github.com/ThatGarlicDude>
 
 	LibPacSorter Version 1.4.0
