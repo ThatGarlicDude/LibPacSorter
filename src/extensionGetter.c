@@ -3,15 +3,17 @@
 #include "romFile.h"
 
 // Returns the file extension included in the filename.
-char* getFileExtension(char* fileName) {
+const char* getFileExtension(const char* fileName) {
 	char* period = strchr(fileName, '.');
+	// If there is no period, then just return NULL.
 	if (period == NULL) {
-		return NULL; // If there is no period, then just return NULL.
+		return NULL;
 	}
-	return ++period; // Return the string after the period.
+	// Return the string after the period.
+	return ++period;
 }
 
 // Ditto, but for the RomFile struct.
-char* getROMExtension(RomFile* romFile) {
+const char* getROMExtension(RomFile* romFile) {
 	return getFileExtension(romFile->fileName);
 }

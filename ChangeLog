@@ -1,5 +1,14 @@
 2025-05-28 GarlicDude <https://github.com/ThatGarlicDude>
 
+	LibPacSorter Version 1.6.0
+	* Submodule LibPacSet is now up to date... again.
+	* Okay, there's failsafe stuff. Cool.
+	* There are some printed outputs this time around. Yay?
+	* The code looks a bit cleaner with the arranged comments.
+	* Because LibPacSet now uses const char*, LibPacSet uses them to make up for it.
+
+2025-05-28 GarlicDude <https://github.com/ThatGarlicDude>
+
 	LibPacSorter Version 1.5.0
 	* Submodule LibPacSet is now up to date.
 	* CMake now turns on C extensions by default.

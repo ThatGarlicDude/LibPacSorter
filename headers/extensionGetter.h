@@ -4,9 +4,9 @@
 #define EXTENSION_GETTER_H
 
 	// Returns the file extension included in the filename.
-	char* getFileExtension(const char* fileName);
+	const char* getFileExtension(const char* fileName);
 
 	// Ditto, but for the RomFile struct.
-	char* getROMExtension(RomFile* romFile);
+	const char* getROMExtension(RomFile* romFile);
 
 #endif
