@@ -1,3 +1,28 @@
+2025-06-01 GarlicDude <https://github.com/ThatGarlicDude>
+
+	LibPacSorter Version 2.0.0
+	* MAJOR UPDATE TIME!
+	* romSorter.c and .h are now called pacsort.c and .h.
+	* romSwapper.c and .h are now called pacswap.c and .h.
+	* romComparator.c and .h are now called paccompare.c and .h.
+	* extensionGetter.c and .h are now called pacextension.c and .h.
+	* void sortROMs() is now called int pac_set_sort(pac_set_t* set).
+	* void swapROMs() is now called int pac_rom_swap(pac_rom_t** rom_a, pac_rom_t** rom_b).
+	* int compareROMs() is now called int pac_rom_compare_names(pac_rom_t* rom_a, pac_rom_t* rom_b).
+	* int findLowestROM() is now called int pac_set_find_lowest_rom_name(pac_set_t* set, size_t offset).
+	* int findHighestROM() is now called int pac_set_find_highest_rom_name(pac_set_t* set, size_t offset).
+	* Removed getFileExtension().
+	* const char* getROMExtension() is now called const char* pac_rom_get_extension(pac_rom_t* rom).
+	* Added test.c, which is only used for debugging the project.
+	* test.c will not be compiled onto the shared library.
+	* CMakeLists.txt no longer wildcards each file in the source directory, hardcoding each file instead.
+	* Added MAIN, which refers to src/test.c.
+	* CMakeLists.txt can now create a test executable called pacsorter_test.
+	* The executable will link LibPacSorter upon compilation.
+	* Updated INSTALL.md, making it more polished and beginner friendly while including C99 as a requirement.
+	* Updated README.md, adding more clarity and flair to it.
+	* README.md also includes a list of all the functions in the project.
+
 2025-05-28 GarlicDude <https://github.com/ThatGarlicDude>
 
 	LibPacSorter Version 1.6.0

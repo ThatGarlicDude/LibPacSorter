@@ -1,1 +1,0 @@
-LibPacSorter only swaps the addresses for the filenames for each RomFile struct. While it's not inherently and bad thing, I think it would be a better practice to swap the addresses for the structs instead of their filename pointers. Just a thought.
